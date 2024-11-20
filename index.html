@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cyan-950 font-sans min-h-screen flex items-center justify-center">
+    <div class="container max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-center text-4xl font-extrabold text-gray-800 mb-6">Rock Paper Scissors</h1>
+        
+        <div class="flex justify-center space-x-4 mb-8">
+            <button class="bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-cyan-400 transform transition duration-300 hover:scale-105" onclick="playGame('rock')">Rock</button>
+            <button class="bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-cyan-400 transform transition duration-300 hover:scale-105" onclick="playGame('paper')">Paper</button>
+            <button class="bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-cyan-400 transform transition duration-300 hover:scale-105" onclick="playGame('scissors')">Scissors</button>
+        </div>
+        
+        <div id="result" class="text-center text-2xl font-semibold text-gray-700"></div>
+        <div id="computerChoice" class="text-center text-lg text-gray-500 mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
